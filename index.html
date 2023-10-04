@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEPHA SPORTS ENTERTAINMENT</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+        background: rgba(0, 0, 0, 0.7) url('abuga.jpg') center center fixed;
+        background-size: cover;
+        background-blend-mode: darken;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .container h1{
+        color: orangered;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+    .navbar ul li{
+        display: inline-block;
+        padding: 18px;
+        text-transform: uppercase;
+    }
+    
+    .navbar ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 4px;
+        transition: 3.5s;
+    }
+    
+    .navbar ul li a:hover{
+        box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,
+        0 3px 50px orangered inset,0 3px 50px orangered inset;
+    }
+    
+    .navbar .reservation{
+        padding: 8px;
+        background-color: orangered;
+    }
+    
+    .content{
+        position: absolute;
+        color: #fff;
+        top: 40%;
+        left: 30%;
+    }
+    
+    .content h3{
+        font-family: sans-serif;
+        font-size: 20px;
+        margin-left: 30%;
+    }
+    
+    .content h1{
+        font-size: 50px;
+    }
+    
+    .content p{
+        text-align: center;
+        margin-top: 17px;
+    }
+    
+    .table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .table td,.table th{
+      padding:12px 15px;
+      border:1px solid #ddd;
+      text-align: center;
+      font-size:16px;
+    }
+    
+    .table th{
+        background-color: orangered;
+        color:#ffffff;
+    }
+    
+    .table tbody tr:nth-child(even){
+        background-color: #f5f5f5;
+    }
+    
+    .social
+    {
+      color: #fff;
+      font-size: 50px;
+      position: absolute;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .social li
+    {
+      list-style: none;
+    }
+    .social li a
+    {
+      display: inline-block;
+      margin-right: 20px;
+      color:orangered;
+      transform: scale(0.5);
+      transition: 0.5s;
+    }
+    .social li a:hover
+    {
+      transform: scale(0.5) translateY(-15px);
+    }
+    
+    .footer{
+        background:orangered;
+        position: relative;
+        z-index: 2;
+        top: 1500px;
+        
+      }
+      .footer .box h2{
+        color: #fff;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    
+    @media(max-width: 500px){
+        .table thead{
+            display: none;
+        }
+    
+        .table, .table tbody, .table tr, .table td{
+            display: block;
+            width: 100%;
+        }
+        .table tr{
+            margin-bottom:15px;
+        }
+        .table td{
+            text-align: right;
+            padding-left: 50%;
+            text-align: right;
+            position: relative;
+        }
+        .table td::before{
+            content: attr(data-label);
+            position: absolute;
+            left:0;
+            width: 50%;
+            padding-left:15px;
+            font-size:15px;
+            font-weight: bold;
+            text-align: left;
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>KEPHA SPORTS ENTERTAINMENT</h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="about.html">ABOUT-US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT-US</a></li>
+                <li><a href="signup.html">SIGNUP/LOGIN</a></li>
+                <li><a href="#"></a></li>
+              
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Welcome to</h3>
+        <h1>KEPHA SPORTS ENTERTAINMENT</h1>
+        <p>
+            These are the following activities offered in our Sports Entertainment club;<br>
+            <ol>
+                <li>Football</li>
+                <li>Basketball</li>
+                <li>Rugby</li>
+            </ol>
+            <ul>
+                <li>Hockey</li>
+                <li>Tennis</li>
+            </ul>
+        </p>
+        <p>
+            Here's an example of our best player playing at our Football Club; <br><br>
+        </p>
+        <img src="kepha.jpg" alt="" width="300" height="250">
+        
+        <p>
+            Here's a video of our best player playing football; <br><br>   
+        </p>
+        <video src="ronaldo.mp4" width="300" height="250" controls>
+
+        </video>
+
+        <table class="table"><br><br>
+            <thead>
+                <tr>
+                 <th>S.No</th>
+                 <th>Sports Activities</th>
+                 <th>Age-gap</th>
+                 <th>Number of Players</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td data-label="S.No">1</td>
+                        <td data-label="Sports Activities">Football</td>
+                        <td data-label="Age-gap">15-30</td>
+                        <td data-label="Number of Players">450</td>
+
+                  </tr>
+       
+                  <tr>
+                    <td data-label="S.No">2</td>
+                    <td data-label="Sports Activities">Basketball</td>
+                    <td data-label="Age-gap">20-35</td>
+                    <td data-label="Number of Players">380</td>
+                  </tr>
+       
+                  <tr>
+                    <td data-label="S.No">3</td>
+                    <td data-label="Sports Activities">Rugby</td>
+                    <td data-label="Age-gap">21-38</td>
+                    <td data-label="Number of Players">270</td>
+                  </tr>
+       
+                  <tr>
+                    <td data-label="S.No">4</td>
+                    <td data-label="Sports Activities">Hockey</td>
+                    <td data-label="Age-gap">20-33</td>
+                    <td data-label="Number of Players">300</td>
+                  </tr>
+
+                  <tr>
+                    <td data-label="S.No">5</td>
+                    <td data-label="Sports Activities">Swimming</td>
+                    <td data-label="Age-gap">12-32</td>
+                    <td data-label="Number of Players">150</td>
+              </tr>
+            </tbody>
+          </table>
+      <p>
+        Here's a link to our website; <br>
+        <a href="https://youtube.com/shorts/lFU-WtnmBIs?si=jBzG6ax2WXAP_df7">CLICK HERE</a>
+      </p>
+
+      <ul class="social">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fab fa-google"></i></a></li>
+      </ul>
+</div>
+    <!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box">
+        <h2>kepha abuga onchere</h2>
+        <h2>Com/m/0049/2021</h2>
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+
+</body>
+</html>
